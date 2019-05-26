@@ -6,5 +6,5 @@ services:
 before_install:
     - docker build -f Dockerfile.dev -t tbuglc/devopsing-react-app .
 script:
-    - docker run tbuglc/devopsing-react-app npm run test -- --coverage
+    - docker run tbuglc/devopsing-react-app npm run test -- --coverage --forceExit
   
